@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "45tuqQZqwD4ZPLXtVMcCjuM9i04910IA6fUxz+KDzqIk1jLtRghF6twjUcRh/BvXYoFLduilS39LulwEzsDczA==",
+  "success": true,
+  "projectFilePath": "D:\\AllProject\\BotSpotify\\BotSpotify\\BotSpotify.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mycyb\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\mycyb\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
+    "C:\\Users\\mycyb\\.nuget\\packages\\telegram.bot\\18.0.0\\telegram.bot.18.0.0.nupkg.sha512",
+    "C:\\Users\\mycyb\\.nuget\\packages\\telegram.bot.extensions.polling\\1.0.2\\telegram.bot.extensions.polling.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
