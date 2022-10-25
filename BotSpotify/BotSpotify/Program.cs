@@ -125,20 +125,49 @@ async Task HandleCallbackQuery(ITelegramBotClient botClient, CallbackQuery callb
     {
         await botClient.SendPhotoAsync(
             callbackQuery.Message.Chat.Id,
-            photo: "https://github.com/TelegramBots/book/raw/master/src/docs/photo-ara.jpg",
-            caption: "<b>Произведите оплату по прикрепленной ссылке:</b> <a href=\"https://oplata.qiwi.com/form?invoiceUid=23ec566d-32e1-42e9-aea9-d45ff07d02b3\r\n\">Pay Spotify - 1m</a>",
+            photo: "https://raw.githubusercontent.com/jberries1/Telegram_Spotify_bot/main/BotSpotify/1%20%D0%BC%D0%B5%D1%81%D1%8F%D1%86/1.png",
+            caption: "<b>➖➖➖➖➖➖➖➖➖➖➖➖\r\n📃 Товар: 1 мес. Spotify Premium \r\n💰 Цена: 280 ₽  \r\n📦 Кол-во: 1 шт.\r\n💡  Итоговая сумма: 280 ₽\r\n💲 Способ оплаты:Qiwi \r\n➖➖➖➖➖➖➖➖➖➖➖➖\r\nДля оплаты произведите перевод на Qiwi кошелек  на сумму 280р на номер +79998441525\r\n⏰ После оплаты напишите оператору: @Nette_RA</b>",
             parseMode: ParseMode.Html
         );
         return;
     }
-    if (callbackQuery.Data.StartsWith("sell"))
+
+    if (callbackQuery.Data.StartsWith("3 month"))
     {
-        await botClient.SendTextMessageAsync(
+        await botClient.SendPhotoAsync(
             callbackQuery.Message.Chat.Id,
-            $"Вы хотите продать?"
+            photo: "https://raw.githubusercontent.com/jberries1/Telegram_Spotify_bot/main/BotSpotify/1%20%D0%BC%D0%B5%D1%81%D1%8F%D1%86/2.png",
+            caption: "<b>➖➖➖➖➖➖➖➖➖➖➖➖\r\n📃 Товар: 3 мес. Spotify Premium \r\n💰 Цена: 800 ₽  \r\n📦 Кол-во: 1 шт.\r\n💡  Итоговая сумма: 800 ₽\r\n💲 Способ оплаты:Qiwi \r\n➖➖➖➖➖➖➖➖➖➖➖➖\r\nДля оплаты произведите перевод на Qiwi кошелек  на сумму 800р на номер +79998441525\r\n⏰ После оплаты напишите оператору: @Nette_RA</b>",
+            parseMode: ParseMode.Html
         );
         return;
     }
+
+    if (callbackQuery.Data.StartsWith("6 month"))
+    {
+        await botClient.SendPhotoAsync(
+            callbackQuery.Message.Chat.Id,
+            photo: "https://raw.githubusercontent.com/jberries1/Telegram_Spotify_bot/main/BotSpotify/1%20%D0%BC%D0%B5%D1%81%D1%8F%D1%86/3.png",
+            caption: "<b>➖➖➖➖➖➖➖➖➖➖➖➖\r\n📃 Товар: 6 мес. Spotify Premium \r\n💰 Цена: 1550 ₽  \r\n📦 Кол-во: 1 шт.\r\n💡  Итоговая сумма: 1550 ₽\r\n💲 Способ оплаты:Qiwi \r\n➖➖➖➖➖➖➖➖➖➖➖➖\r\nДля оплаты произведите перевод на Qiwi кошелек  на сумму 1550р на номер +79998441525\r\n⏰ После оплаты напишите оператору: @Nette_RA</b>",
+            parseMode: ParseMode.Html
+        );
+        return;
+    }
+    if (callbackQuery.Data.StartsWith("12 month"))
+    {
+        await botClient.SendPhotoAsync(
+            callbackQuery.Message.Chat.Id,
+            photo: "https://raw.githubusercontent.com/jberries1/Telegram_Spotify_bot/main/BotSpotify/1%20%D0%BC%D0%B5%D1%81%D1%8F%D1%86/4.png",
+            caption: "<b>➖➖➖➖➖➖➖➖➖➖➖➖\r\n📃 Товар: 12 мес. Spotify Premium \r\n💰 Цена: 2560 ₽  \r\n📦 Кол-во: 1 шт.\r\n💡  Итоговая сумма: 2560 ₽\r\n💲 Способ оплаты:Qiwi \r\n➖➖➖➖➖➖➖➖➖➖➖➖\r\nДля оплаты произведите перевод на Qiwi кошелек  на сумму 2560р на номер +79998441525\r\n⏰ После оплаты напишите оператору: @Nette_RA</b>",
+            parseMode: ParseMode.Html
+        );
+        return;
+    }
+
+
+    
+
+
     await botClient.SendTextMessageAsync(
         callbackQuery.Message.Chat.Id,
         $"You choose with data: {callbackQuery.Data}"
